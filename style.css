@@ -95,6 +95,27 @@ body {
     letter-spacing: 1px;
 }
 
+.header-nav {
+    display: flex;
+    gap: 28px;
+}
+
+.header-nav a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: color 0.2s;
+}
+
+.header-nav a:hover {
+    color: var(--color-text-main);
+}
+
+@media screen and (max-width: 768px) {
+    .header-nav { display: none; }
+}
+
 .header-cta-btn {
     background: transparent;
     color: var(--color-text-main);
